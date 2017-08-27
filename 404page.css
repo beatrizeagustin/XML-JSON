@@ -1,0 +1,155 @@
+html, body {
+            margin: 0;
+            padding: 0;
+            background: #99DEDA;
+        }
+       
+        svg {
+          position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+          }
+
+        svg a {
+            pointer-events: bounding-box; /* makes entire svg area clickable */
+        }
+   
+        #Oops-text {
+            position: relative;
+            top: 50px;
+            left: 15%;
+            font-size: 54px;
+            font-family: 'Patua One', cursive;
+            color: #293C3B;
+            z-index: 1;
+        }
+        
+        #Oops-subtext {
+            position: relative;
+            top: 5px;
+            left: 15%;
+            z-index: 1;
+        }
+        
+        #Oops-subtext p {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-family: verdana, sans-serif;
+        }
+  /* svg links keyframes */      
+        .svg-links-group1 {
+            animation: float 15s linear infinite;
+            transform-origin: center;
+        }
+
+        .svg-links-group3 {
+            animation: float3 15s linear infinite;
+            transform-origin: center;
+        }
+    
+        .svg-links-group2 {
+            animation: float2 15s linear infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes float {
+            0% {transform: translateX(1px) rotate(5deg)}
+            20% {transform: translateX(0) rotate(-5deg)}
+            40% {transform: translateX(1px) rotate(10deg)}
+            60% {transform: translateX(0) rotate(-5deg)}
+            80% {transform: translateX(1px) rotate(5deg)}
+            100% {transform: translateX(0) rotate(-5deg)}
+        }
+        
+       @keyframes float2 {
+            0% {transform: translateX(0) rotate(-5deg)}
+            20% {transform: translateX(2px) rotate(5deg)}
+            40% {transform: translateX(0) rotate(-5deg)}
+            60% {transform: translateX(2px) rotate(5deg)}
+            80% {transform: translateX(0) rotate(-5deg)}
+            100% {transform: translateX(2px) rotate(5deg)}
+        }
+        
+       @keyframes float3 {
+            0% {transform: translateX(1px) rotate(5deg)}
+            20% {transform: translateX(0) rotate(-5deg)}
+            40% {transform: translateX(1px) rotate(5deg)}
+            60% {transform: translateX(0) rotate(-5deg)}
+            80% {transform: translateX(1px) rotate(5deg)}
+            100% {transform: translateX(0) rotate(-5deg)}
+        }
+/* end links */ 
+
+/* bubble keyframes */
+        #big-bubbles {
+            animation: bubble 5s linear infinite;
+        }
+        
+        @keyframes bubble {
+            0% {transform: translateY(0px); opacity: 0}
+            20% {transform: translateY(-3px); opacity: 0.5}
+            40% {transform: translateY(-6px); opacity: 1}
+            60% {transform: translateY(-9px); opacity: 0.8}
+            80% {transform: translateY(-12px); opacity: 0.6}
+            100% {transform: translateY(-15px); opacity: 0}
+        }
+        
+/* end bubbles */
+
+/* sunbeam keyframes */
+
+.sunbeam1 {
+        animation: sunbeam1 10s linear infinite;
+    }
+
+.sunbeam2 {
+    animation: sunbeam2 10s linear infinite;
+}
+
+.sunbeam3 {
+    animation: sunbeam3 10s linear infinite;
+}
+
+@keyframes sunbeam1 {
+    0% {transform: translateX(2px); opacity: 0.5}
+    20% {transform: translateX(-2px); opacity: 0.8}
+    40% {transform: translateX(2px); opacity: 1}
+    60% {transform: translateX(-2px); opacity: 0.8}
+    80% {transform: translateX(2px); opacity: 0.5}
+    100% {transform: translateX(-2px); opacity: 0}
+} 
+
+@keyframes sunbeam2 {
+    0% {transform: translateX(-1px); opacity: 0}
+    20% {transform: translateX(1px); opacity: 0.5}
+    40% {transform: translateX(-1px); opacity: 0.8}
+    60% {transform: translateX(1px); opacity: 1}
+    80% {transform: translateX(-1px); opacity: 0.8}
+    100% {transform: translateX(1px)}; opacity: 0.5}
+} 
+
+@keyframes sunbeam3 {
+    0% {transform: translateX(-3px); opacity: 1}
+    20% {transform: translateX(3px); opacity: 0.8}
+    40% {transform: translateX(-3px); opacity: 0.5}
+    60% {transform: translateX(3px); opacity: 0}
+    80% {transform: translateX(-3px); opacity: 0.5}
+    100% {transform: translateX(3px); opacity: 0.8}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
