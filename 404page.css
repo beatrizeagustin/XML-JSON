@@ -84,7 +84,7 @@ html, body {
 /* end links */ 
 
 /* bubble keyframes */
-        #big-bubbles {
+        .big-bubbles {
             animation: bubble 5s linear infinite;
         }
         
