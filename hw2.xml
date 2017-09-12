@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="hw2.css"?>
+
+<!-- Beatrize Agustin - September 11, 2017 -->
+<ccsf>
+
+    <cnit131 id="cnit32111">
+        <instructor>Petty, M</instructor>
+        <course>Internet and Intro to HTML</course>
+    </cnit131>
+    <cnit131a id="cnit32123">
+        <instructor>Ferreira Da Silva</instructor>
+        <course>XML &amp; JSON</course>
+    </cnit131a>
+    <cnit132 id="cnit23145">
+        <instructor>Corbie, T</instructor>
+        <course>Intermediate HTML &amp; CSS</course>
+    </cnit132>
+    <cnit133 id="cnit32167">
+        <instructor>Rubin, S</instructor>
+        <course>Javascript</course>
+    </cnit133>
+
+</ccsf>
