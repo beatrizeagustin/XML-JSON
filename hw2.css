@@ -1,2 +1,6 @@
-ccsf	{ font-family:"Verdana, Arial, sans-serif"; font-size:1.2em; }
+ccsf	{ font-family:"Verdana, Arial, sans-serif"; font-size:1.2em; padding: 50px;}
 cnit131	{ display:block; color:red;}
+cnit131a { display:block; color: blue;}
+cnit132 { display: block; color: green;}
+cnit133 { display: block; color: deeppink;}
+instructor { font-weight: 800; font-style: italic;}
