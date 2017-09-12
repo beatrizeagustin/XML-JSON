@@ -1,0 +1,79 @@
+/* index.html */
+body {
+    font-family: helvetica neue, sans-serif;
+}
+
+.heading {
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #00c6ff, #0072ff);
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    width: 100%;
+    height: 100px;
+    line-height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.table-section {
+    position: relative;
+    top: 100px;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+}
+
+table, th, td {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+a:hover, .message a:hover {
+    color: #ccc;
+}
+
+/* end index.html */
+
+.message {
+    position: relative;
+    top: 150px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.message p {
+  font-size: 14px;
+}
+
+.message a {
+    color: #00c6ff;
+}
+
+
