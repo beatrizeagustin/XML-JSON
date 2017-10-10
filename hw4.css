@@ -5,12 +5,12 @@ states { width: 300px; border: 2px solid red; margin: 0 auto; }
 
 @namespace w url("http://www.ccsf.edu/west");
 
-east|name {
+e|name {
     background: skyblue;
     color: red;
 }
 
-west|name {
+w|name {
     background: yellow;
     color: blue;
 }
