@@ -9,6 +9,10 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
 <html>
     <head>
         <title>Stock Prices</title>
+        <style>
+            .cyan {background: cyan}
+            .lightgray {background: lightgray}
+        </style>
     </head>
     <body>
         <table>
