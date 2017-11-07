@@ -21,7 +21,7 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
             <th>Price</th>
             <th>CEO</th>
         </tr>
-        <xsl:for-each select = "/stock:doc/stock:item">
+        <xsl:for-each select = "/stock:doc/stock:item/stock:price">
         <xsl:if test = "stock:price &gt; 70">
         <xsl:variable name="alternate-colors">
         <xsl:choose>
