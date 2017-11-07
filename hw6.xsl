@@ -21,7 +21,7 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
             <th>Price</th>
             <th>CEO</th>
         </tr>
-        <xsl:for-each select = "/stock:doc/stock:item/stock:price">
+        <xsl:for-each select = "/stock:doc/stock:item">
         <xsl:if test = "stock:price &gt; 70">
         <xsl:variable name="alternate-colors">
         <xsl:choose>
@@ -37,11 +37,14 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
         </xsl:if>
         </xsl:for-each>
         </table>
+        <xsl:for-each select = "/stock:doc/stock:item">
+        <xsl:if test = "stock:price &gt; 70">
         <div>
            The total of stocks that cost more than $70.00 is
-        <xsl:value-of select="count(/stock:doc/stock:item)" /> 
+        <xsl:value-of select="count(/stock:doc/stock:item/stock:price)" /> 
         </div>
-        
+        </xsl:if>
+        </xsl:for-each>
         
     </body>
     </html>
