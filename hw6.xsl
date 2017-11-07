@@ -37,12 +37,10 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
         </xsl:if>
         </xsl:for-each>
         </table>
-        <xsl:if test = "stock:price &gt; 70">
         <div>
            The total of stocks that cost more than $70.00 is
-        <xsl:value-of select="count(/stock:doc/stock:item)" /> 
+        <xsl:value-of select="count(/stock:doc/stock:item/stock:price)" /> 
         </div>
-        </xsl:if>
         
     </body>
     </html>
