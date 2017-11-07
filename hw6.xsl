@@ -34,13 +34,15 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
             <td><xsl:value-of select="./stock:price" /></td>
             <td><xsl:value-of select="stock:ceo" /></td>
         </tr> 
-        <tr>
-           <td>The total of stocks that cost more than $70.00 is
-        $<xsl:value-of select="sum(/stock:doc/stock:item/stock:price)" /></td> 
-        </tr>
         </xsl:if>
         </xsl:for-each>
         </table>
+        <xsl:if test = "stock:price &gt; 70">
+        <div>
+           The total of stocks that cost more than $70.00 is
+        $<xsl:value-of select="sum(/stock:doc/stock:item/stock:price)" /> 
+        </div>
+        </xsl:if>
     </body>
     </html>
 </xsl:template>   
