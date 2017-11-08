@@ -39,7 +39,7 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
         </table>
         <div>
            The total of stocks that cost more than $70.00 is
-        <xsl:value-of select="count(/stock:doc/stock:item[price &gt; 70])" /> 
+        <xsl:value-of select="count(/stock:doc/stock:item[stock:price &gt; 70])" /> 
         </div>
         
     </body>
