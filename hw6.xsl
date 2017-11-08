@@ -31,7 +31,7 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
         </xsl:variable>
         <tr class="{$alternate-colors}">
             <td><xsl:value-of select="concat(./stock:symbol, '')" /></td>
-            <td><xsl:value-of select="format-number(.,'$##.##')" /></td>
+            <td><xsl:value-of select="format-number(./stock:price,'$##.##')" /></td>
             <td><xsl:value-of select="concat(./stock:ceo, '')" /></td>
         </tr> 
         </xsl:if>
