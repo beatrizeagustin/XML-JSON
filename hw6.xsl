@@ -21,7 +21,7 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
             <th>Price</th>
             <th>CEO</th>
         </tr>
-        <xsl:for-each select = "/stock:doc/stock:item/stock:price">
+        <xsl:for-each select = "/stock:doc/stock:item">
         <xsl:if test = "stock:price &gt; 70">
         <xsl:variable name="alternate-colors">
         <xsl:choose>
@@ -31,7 +31,7 @@ xmlns:stock = "http://www.ineasysteps.com/xsd">
         </xsl:variable>
         <tr class="{$alternate-colors}">
             <td><xsl:value-of select="concat(./stock:symbol, '')" /></td>
-            <td><xsl:value-of select="format-number(./stock:price,'$##.##')" /></td>
+            <td><xsl:value-of select="format-number(./stock:doc/stock:item/stock:price,'$##.##')" /></td>
             <td><xsl:value-of select="concat(./stock:ceo, '')" /></td>
         </tr> 
         </xsl:if>
